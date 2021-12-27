@@ -1,0 +1,31 @@
+{
+  "name": "@railgun-community/deployments",
+  "version": "0.0.1",
+  "description": "Railgun deployment addresses and artifacts",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "lint": "eslint src/**/*.ts",
+    "compile": "npm run clean && tsc",
+    "prepack": "npm install && npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Railgun-Community/deployments.git"
+  },
+  "author": "Railgun Contributors",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Railgun-Community/deployments/issues"
+  },
+  "homepage": "https://github.com/Railgun-Community/deployments#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.4"
+  }
+}
