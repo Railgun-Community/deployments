@@ -1,4 +1,6 @@
-const abi = [{ inputs: [{ internalType: 'contract IERC20', name: '_stakingToken', type: 'address' }], stateMutability: 'nonpayable', type: 'constructor' }, {
+import type { ABIFragment } from '../types';
+
+const abi: ABIFragment[] = [{ inputs: [{ internalType: 'contract IERC20', name: '_stakingToken', type: 'address' }], stateMutability: 'nonpayable', type: 'constructor' }, {
   anonymous: false,
   inputs: [{
     indexed: true, internalType: 'address', name: 'account', type: 'address',

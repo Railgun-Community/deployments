@@ -1,4 +1,6 @@
-const abi = [{ inputs: [{ internalType: 'contract Staking', name: '_stakingContract', type: 'address' }, { internalType: 'contract Delegator', name: '_delegator', type: 'address' }], stateMutability: 'nonpayable', type: 'constructor' }, {
+import type { ABIFragment } from '../types';
+
+const abi: ABIFragment[] = [{ inputs: [{ internalType: 'contract Staking', name: '_stakingContract', type: 'address' }, { internalType: 'contract Delegator', name: '_delegator', type: 'address' }], stateMutability: 'nonpayable', type: 'constructor' }, {
   anonymous: false,
   inputs: [{
     indexed: true, internalType: 'uint256', name: 'id', type: 'uint256',
@@ -98,8 +100,6 @@ const abi = [{ inputs: [{ internalType: 'contract Staking', name: '_stakingContr
   type: 'function',
 }, {
   inputs: [{ internalType: 'uint256', name: '_id', type: 'uint256' }, { internalType: 'address', name: '_account', type: 'address' }], name: 'getSponsored', outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }], stateMutability: 'view', type: 'function',
-}, {
-  inputs: [{ internalType: 'uint256', name: '_id', type: 'uint256' }, { internalType: 'address', name: '_account', type: 'address' }], name: 'getVotes', outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }], stateMutability: 'view', type: 'function',
 }, {
   inputs: [{ internalType: 'uint256', name: '', type: 'uint256' }], name: 'proposals', outputs: [{ internalType: 'address', name: 'proposer', type: 'address' }, { internalType: 'string', name: 'proposalDocument', type: 'string' }, { internalType: 'uint256', name: 'publishTime', type: 'uint256' }, { internalType: 'uint256', name: 'voteCallTime', type: 'uint256' }, { internalType: 'uint256', name: 'sponsorship', type: 'uint256' }, { internalType: 'bool', name: 'executed', type: 'bool' }, { internalType: 'uint256', name: 'yayVotes', type: 'uint256' }, { internalType: 'uint256', name: 'nayVotes', type: 'uint256' }, { internalType: 'uint256', name: 'sponsorInterval', type: 'uint256' }, { internalType: 'uint256', name: 'votingInterval', type: 'uint256' }], stateMutability: 'view', type: 'function',
 }, {

@@ -1,4 +1,6 @@
-const abi = [{ inputs: [{ internalType: 'address', name: '_admin', type: 'address' }], stateMutability: 'nonpayable', type: 'constructor' }, {
+import type { ABIFragment } from '../types';
+
+const abi: ABIFragment[] = [{ inputs: [{ internalType: 'address', name: '_admin', type: 'address' }], stateMutability: 'nonpayable', type: 'constructor' }, {
   anonymous: false,
   inputs: [{
     indexed: true, internalType: 'address', name: 'caller', type: 'address',

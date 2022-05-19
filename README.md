@@ -9,11 +9,23 @@ Contains deployment configs and artifacts for each chain
 ```javascript
 const deployment = require('@railgun-community/deployments');
 
-// Get ethereum deployment addresses by network name
-console.log(deployment.networks.ethereum.addresses);
+// Get ethereum deployment details by network name
+console.log(deployment.chainConfig.ethereum);
 
-// Get ethereum deployment addresses by chainID
-console.log(deployment.chainID[1].addresses);
+// Get ethereum deployment details by chain ID
+console.log(deployment.chainConfig[1]);
+
+/**
+{
+  delegator: { address, deploymentBlock },
+  implementation: '...',
+  proxy: '...',
+  ...
+}
+*/
+
+// Get ABIs
+console.log(deployment.abis);
 
 /**
 {
@@ -23,10 +35,4 @@ console.log(deployment.chainID[1].addresses);
   ...
 }
 */
-
-// Get abi by network name
-console.log(deployment.networks.ethereum.abi.implementation);
-
-// Get abi by chainID
-console.log(deployment.chainID[1].abi.implementation);
 ```

@@ -1,4 +1,6 @@
-const abi = [{ inputs: [{ internalType: 'address', name: '_initialHolder', type: 'address' }, { internalType: 'uint256', name: '_initialSupply', type: 'uint256' }, { internalType: 'uint256', name: '_cap', type: 'uint256' }, { internalType: 'address', name: '_owner', type: 'address' }, { internalType: 'address[]', name: '_lps', type: 'address[]' }], stateMutability: 'nonpayable', type: 'constructor' }, {
+import type { ABIFragment } from '../types';
+
+const abi: ABIFragment[] = [{ inputs: [{ internalType: 'address', name: '_initialHolder', type: 'address' }, { internalType: 'uint256', name: '_initialSupply', type: 'uint256' }, { internalType: 'uint256', name: '_cap', type: 'uint256' }, { internalType: 'address', name: '_owner', type: 'address' }, { internalType: 'address[]', name: '_lps', type: 'address[]' }], stateMutability: 'nonpayable', type: 'constructor' }, {
   anonymous: false,
   inputs: [{
     indexed: true, internalType: 'address', name: 'owner', type: 'address',
