@@ -5,6 +5,14 @@ const chainConfig: ChainConfig = {
     address: '0xb6d513f6222ee92fff975e901bd792e2513fb53b',
     deploymentBlock: 12791440,
   },
+  governorRewardsImplementation: {
+    address: '0x27d30e803a0ec079daa3a2e6c3590cca9f63c9d8',
+    deploymentBlock: 15505787,
+  },
+  governorRewardsProxy: {
+    address: '0xa353bc0454931ac46fd90c8ef27f908ab9e34686',
+    deploymentBlock: 15505785,
+  },
   implementation: {
     address: '0xbcfa4de73afb071c9ff18a20a22f818e657c541a',
     deploymentBlock: 14693018,
@@ -25,16 +33,18 @@ const chainConfig: ChainConfig = {
     address: '0xee6a649aa3766bd117e12c161726b693a1b2ee20',
     deploymentBlock: 12780995,
   },
-  treasury: {
-    address: '0xc851fbe0f07a326ce0326ccc70c2a62732e74d6c',
-    deploymentBlock: 12802679,
+  treasuryImplementation: {
+    address: '0xa092c7577354ea82a6c7e55b423c3dd80f0df255',
+    deploymentBlock: 15138801,
+  },
+  treasuryProxy: {
+    address: '0xE8A8B458BcD1Ececc6b6b58F80929b29cCecFF40',
+    deploymentBlock: 15138802,
   },
   voting: {
-    address: '0xfc4b580c9bda2eef4e94d9fb4bcb1f7a61660cf9',
-    deploymentBlock: 12791440,
+    address: '0xc480F68A3dcC3EdD82134FAB45C14A0FcF1dA3CC',
+    deploymentBlock: 15505853,
   },
 };
 
-export {
-  chainConfig,
-};
+export { chainConfig };

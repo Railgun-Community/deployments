@@ -26,16 +26,10 @@ const abi: ABIFragment[] = [
     type: 'event',
   },
   {
-    anonymous: false,
-    inputs: [],
-    name: 'ProxyPause',
-    type: 'event',
+    anonymous: false, inputs: [], name: 'ProxyPause', type: 'event',
   },
   {
-    anonymous: false,
-    inputs: [],
-    name: 'ProxyUnpause',
-    type: 'event',
+    anonymous: false, inputs: [], name: 'ProxyUnpause', type: 'event',
   },
   {
     anonymous: false,

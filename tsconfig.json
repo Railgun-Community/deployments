@@ -8,5 +8,5 @@
     "rootDir": "./src",
     "strict": true
   },
-  "exclude": ["dist/*"],
+  "exclude": ["dist/*"]
 }

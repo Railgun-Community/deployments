@@ -1,16 +1,19 @@
 type Contracts =
-  'delegator' |
-  'implementation' |
-  'proxy' |
-  'proxyAdmin' |
-  'rail' |
-  'staking' |
-  'treasury' |
-  'voting';
+  | 'delegator'
+  | 'governorRewardsImplementation'
+  | 'governorRewardsProxy'
+  | 'implementation'
+  | 'proxy'
+  | 'proxyAdmin'
+  | 'rail'
+  | 'staking'
+  | 'treasuryImplementation'
+  | 'treasuryProxy'
+  | 'voting';
 
 export type ContractConfig = {
-  address: string,
-  deploymentBlock: number,
+  address: string;
+  deploymentBlock: number;
 };
 
 export type ChainConfig = Record<Contracts, ContractConfig>;
