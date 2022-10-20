@@ -47,7 +47,12 @@ const chainConfig: ChainConfig = {
   },
 };
 
-// relayAdapt: 0xD147B7Dfa636a1c50A52bF6A6FE910680274eE24
-// WETH9: 0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6
+// RELAY ADAPT
+// Address: 0xD147B7Dfa636a1c50A52bF6A6FE910680274eE24
+// Deployment Block: 7796000
+
+// WETH9
+// Address: 0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6
+// Deployment Block: 1036651
 
 export { chainConfig };
