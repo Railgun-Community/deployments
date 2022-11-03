@@ -48,7 +48,7 @@ const name = {
   polygon,
 } as const;
 
-const chainConfigs: Record<string, ChainConfig> = {
+const chainConfigs: Record<string, ChainConfig | undefined> = {
   ...chainID,
   ...name,
 } as const;
