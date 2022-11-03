@@ -1,4 +1,4 @@
-import { chainConfig as binance } from './chains/binance';
+import { chainConfig as bsc } from './chains/bsc';
 import { chainConfig as ethereum } from './chains/ethereum';
 import { chainConfig as goerli } from './chains/goerli';
 import { chainConfig as mumbai } from './chains/mumbai';
@@ -35,13 +35,13 @@ const abis: ABIs = {
 const chainID = {
   1: ethereum,
   5: goerli,
-  56: binance,
+  56: bsc,
   137: polygon,
   80001: mumbai,
 } as const;
 
 const name = {
-  binance,
+  bsc,
   ethereum,
   goerli,
   mumbai,
