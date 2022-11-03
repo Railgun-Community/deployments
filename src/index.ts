@@ -4,7 +4,7 @@ import { chainConfig as goerli } from './chains/goerli';
 import { chainConfig as mumbai } from './chains/mumbai';
 import { chainConfig as polygon } from './chains/polygon';
 
-import type { ABIs } from './types';
+import type { ABIs, ChainConfig } from './types';
 
 import { abi as delegator } from './abi/delegator';
 import { abi as implementation } from './abi/implementation';
@@ -48,9 +48,9 @@ const name = {
   polygon,
 } as const;
 
-const chainConfigs = {
+const chainConfigs: Record<string, ChainConfig> = {
   ...chainID,
   ...name,
-};
+} as const;
 
 export { chainConfigs, abis };
