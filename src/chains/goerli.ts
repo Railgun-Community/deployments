@@ -48,8 +48,8 @@ const chainConfig: ChainConfig = {
 };
 
 // RELAY ADAPT
-// Address: 0xD147B7Dfa636a1c50A52bF6A6FE910680274eE24
-// Deployment Block: 7796000
+// Address: 0x57F5925FeB79B1fd7Cc491F858D7fBc65502D3FE
+// Deployment Block: 7921356
 
 // WETH9
 // Address: 0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6
