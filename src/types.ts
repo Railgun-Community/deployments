@@ -1,5 +1,6 @@
 type Contracts =
   | 'delegator'
+  | 'getters'
   | 'governorRewardsImplementation'
   | 'governorRewardsProxy'
   | 'implementation'
