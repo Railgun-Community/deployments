@@ -10,12 +10,12 @@ const chainConfig: ChainConfig = {
     deploymentBlock: 15997046,
   },
   governorRewardsImplementation: {
-    address: '0x27d30e803a0ec079daa3a2e6c3590cca9f63c9d8',
-    deploymentBlock: 15505787,
+    address: '0x7d1C12008d180718938F535eE0dec7ac3473c179',
+    deploymentBlock: 16027842,
   },
   governorRewardsProxy: {
-    address: '0xa353bc0454931ac46fd90c8ef27f908ab9e34686',
-    deploymentBlock: 15505785,
+    address: '0x2eCa05b128bF5cbd5A73CC4BB625B51131FF119B',
+    deploymentBlock: 16027851,
   },
   implementation: {
     address: '0xbcfa4de73afb071c9ff18a20a22f818e657c541a',
