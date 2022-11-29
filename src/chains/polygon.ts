@@ -18,8 +18,8 @@ const chainConfig: ChainConfig = {
     deploymentBlock: 35938117,
   },
   implementation: {
-    address: '0x280e417ab3cafc378f3e6f91148fd8ef766d4c95',
-    deploymentBlock: 27803264,
+    address: '0xa375b97b5701bb85b963192072f1699b49c0e9f7',
+    deploymentBlock: 35570637,
   },
   proxy: {
     address: '0x19b620929f97b7b990801496c3b361ca5def8c71',
