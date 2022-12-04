@@ -6,8 +6,8 @@ const chainConfig: ChainConfig = {
     deploymentBlock: 11643056,
   },
   getters: {
-    address: '0xD0fE832D4108eE5Ef215512f1A73c777B2bBeBC8',
-    deploymentBlock: 23162094,
+    address: '0xc7FfA542736321A3dd69246d73987566a5486968',
+    deploymentBlock: 23601804,
   },
   governorRewardsImplementation: {
     address: '0x046e871BA524e4A868BD80f3b31721212847A682',

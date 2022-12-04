@@ -56,7 +56,7 @@ const abi: ABIFragment[] = [
         type: 'address',
       },
       {
-        internalType: 'address[]',
+        internalType: 'contract IERC20[]',
         name: '_tokens',
         type: 'address[]',
       },
@@ -77,6 +77,40 @@ const abi: ABIFragment[] = [
         internalType: 'bool[]',
         name: '',
         type: 'bool[]',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [
+      {
+        internalType: 'address',
+        name: '_account',
+        type: 'address',
+      },
+      {
+        internalType: 'contract IERC20',
+        name: '_token',
+        type: 'address',
+      },
+      {
+        internalType: 'uint256',
+        name: '_startingInterval',
+        type: 'uint256',
+      },
+      {
+        internalType: 'uint256',
+        name: '_endingInterval',
+        type: 'uint256',
+      },
+    ],
+    name: 'getEarnedTokensPerInterval',
+    outputs: [
+      {
+        internalType: 'uint256[]',
+        name: '',
+        type: 'uint256[]',
       },
     ],
     stateMutability: 'view',
@@ -107,6 +141,32 @@ const abi: ABIFragment[] = [
         internalType: 'struct Staking.GlobalsSnapshot[]',
         name: '',
         type: 'tuple[]',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [],
+    name: 'governorRewards',
+    outputs: [
+      {
+        internalType: 'contract GovernorRewards',
+        name: '',
+        type: 'address',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [],
+    name: 'staking',
+    outputs: [
+      {
+        internalType: 'contract Staking',
+        name: '',
+        type: 'address',
       },
     ],
     stateMutability: 'view',
