@@ -1,4 +1,6 @@
 type Contracts =
+  | 'arbitrumExecutor'
+  | 'arbitrumSender'
   | 'delegator'
   | 'getters'
   | 'governorRewardsImplementation'

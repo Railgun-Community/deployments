@@ -6,6 +6,8 @@ import { chainConfig as polygon } from './chains/polygon';
 
 import type { ABIs, ChainConfig } from './types';
 
+import { abi as arbitrumExecutor } from './abi/arbitrumExecutor';
+import { abi as arbitrumSender } from './abi/arbitrumSender';
 import { abi as delegator } from './abi/delegator';
 import { abi as getters } from './abi/getters';
 import { abi as governorRewardsImplementation } from './abi/governorRewardsImplementation';
@@ -20,6 +22,8 @@ import { abi as treasuryProxy } from './abi/treasuryProxy';
 import { abi as voting } from './abi/voting';
 
 const abis: ABIs = {
+  arbitrumExecutor,
+  arbitrumSender,
   delegator,
   getters,
   governorRewardsImplementation,

@@ -1,6 +1,14 @@
 import type { ChainConfig } from '../types';
 
 const chainConfig: ChainConfig = {
+  arbitrumExecutor: {
+    address: '',
+    deploymentBlock: -1,
+  },
+  arbitrumSender: {
+    address: '',
+    deploymentBlock: -1,
+  },
   delegator: {
     address: '0x4A7532f58259524251D7df1052762dc23c98Bae7',
     deploymentBlock: 11643056,
