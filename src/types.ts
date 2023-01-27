@@ -1,11 +1,11 @@
 type Contracts =
-  | 'arbitrumExecutor'
-  | 'arbitrumSender'
   | 'delegator'
   | 'getters'
   | 'governorRewardsImplementation'
   | 'governorRewardsProxy'
   | 'implementation'
+  | 'L1Sender'
+  | 'L2Executor'
   | 'proxy'
   | 'proxyAdmin'
   | 'rail'
