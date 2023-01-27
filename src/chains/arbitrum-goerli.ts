@@ -27,7 +27,7 @@ const chainConfig: ChainConfig = {
   },
   L2Executor: {
     address: '0x21D7422F763555607aF1fE77778A3E234D0ECE19',
-    deploymentBlock: -1,
+    deploymentBlock: 2611934,
   },
   proxy: {
     address: '0xA0603e598F9Ac2fc7475a3fA08D0794066615D9a',
