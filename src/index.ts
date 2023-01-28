@@ -51,6 +51,8 @@ const chainID = {
 } as const;
 
 const name = {
+  arbitrumGoerli,
+  arbitrum,
   bsc,
   ethereum,
   goerli,
