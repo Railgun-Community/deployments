@@ -1,6 +1,6 @@
 {
   "name": "@railgun-community/deployments",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "Railgun deployment addresses and artifacts",
   "main": "dist/index.js",
   "scripts": {

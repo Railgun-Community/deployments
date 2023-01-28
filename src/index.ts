@@ -1,3 +1,5 @@
+import { chainConfig as arbitrumGoerli } from './chains/arbitrum-goerli';
+import { chainConfig as arbitrum } from './chains/arbitrum';
 import { chainConfig as bsc } from './chains/bsc';
 import { chainConfig as ethereum } from './chains/ethereum';
 import { chainConfig as goerli } from './chains/goerli';
@@ -43,7 +45,9 @@ const chainID = {
   5: goerli,
   56: bsc,
   137: polygon,
+  42161: arbitrum,
   80001: mumbai,
+  421613: arbitrumGoerli,
 } as const;
 
 const name = {
