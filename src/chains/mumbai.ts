@@ -2,8 +2,8 @@ import type { ChainConfig } from '../types';
 
 const chainConfig: ChainConfig = {
   delegator: {
-    address: '0x464a0c9e62534b3b160c35638DD7d5cf761f429e',
-    deploymentBlock: 28697314,
+    address: '0x53B28A82fA1c9182060a3dA8Dd05a85c6B19894f',
+    deploymentBlock: 32273141,
   },
   getters: {
     address: '',
@@ -42,8 +42,8 @@ const chainConfig: ChainConfig = {
     deploymentBlock: 28697313,
   },
   staking: {
-    address: '0x2Dd63f558BC73f021d2B818c063C3Ceae245307E',
-    deploymentBlock: 28697313,
+    address: '',
+    deploymentBlock: -1,
   },
   treasuryImplementation: {
     address: '0x7b9d5f694aee558bf0462b8507e65f4278954220',
@@ -54,8 +54,8 @@ const chainConfig: ChainConfig = {
     deploymentBlock: 28697316,
   },
   voting: {
-    address: '0x6d3734c1cb5d865153490e6E710D01daE2402176',
-    deploymentBlock: 28697314,
+    address: '',
+    deploymentBlock: -1,
   },
 };
 
