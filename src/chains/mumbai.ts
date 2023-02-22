@@ -54,7 +54,7 @@ const chainConfig: ChainConfig = {
     deploymentBlock: 28697316,
   },
   voting: {
-    address: '',
+    address: '0x6e6Df1ad1d3Ea40A1236Efdbe71dbEec96A0Bd7e',
     deploymentBlock: -1,
   },
 };
