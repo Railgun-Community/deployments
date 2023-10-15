@@ -5,6 +5,7 @@ import { chainConfig as ethereum } from './chains/ethereum';
 import { chainConfig as goerli } from './chains/goerli';
 import { chainConfig as mumbai } from './chains/mumbai';
 import { chainConfig as polygon } from './chains/polygon';
+import { chainConfig as sepolia } from './chains/sepolia';
 
 import type { ABIs, ChainConfig } from './types';
 
@@ -48,6 +49,7 @@ const chainID = {
   42161: arbitrum,
   80001: mumbai,
   421613: arbitrumGoerli,
+  11155111: sepolia,
 } as const;
 
 const name = {
