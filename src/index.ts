@@ -1,9 +1,6 @@
-import { chainConfig as arbitrumGoerli } from './chains/arbitrum-goerli';
 import { chainConfig as arbitrum } from './chains/arbitrum';
 import { chainConfig as bsc } from './chains/bsc';
 import { chainConfig as ethereum } from './chains/ethereum';
-import { chainConfig as goerli } from './chains/goerli';
-import { chainConfig as mumbai } from './chains/mumbai';
 import { chainConfig as polygon } from './chains/polygon';
 import { chainConfig as sepolia } from './chains/sepolia';
 
@@ -43,23 +40,18 @@ const abis: ABIs = {
 
 const chainID = {
   1: ethereum,
-  5: goerli,
   56: bsc,
   137: polygon,
   42161: arbitrum,
-  80001: mumbai,
-  421613: arbitrumGoerli,
   11155111: sepolia,
 } as const;
 
 const name = {
-  arbitrumGoerli,
   arbitrum,
   bsc,
   ethereum,
-  goerli,
-  mumbai,
   polygon,
+  sepolia
 } as const;
 
 const chainConfigs: Record<string, ChainConfig | undefined> = {
