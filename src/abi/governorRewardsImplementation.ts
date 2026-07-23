@@ -42,6 +42,38 @@ const abi: ABIFragment[] = [
     anonymous: false,
     inputs: [
       {
+        indexed: false,
+        internalType: 'uint8',
+        name: 'version',
+        type: 'uint8',
+      },
+    ],
+    name: 'Initialized',
+    type: 'event',
+  },
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: false,
+        internalType: 'uint256',
+        name: 'oldIntervalBP',
+        type: 'uint256',
+      },
+      {
+        indexed: false,
+        internalType: 'uint256',
+        name: 'newIntervalBP',
+        type: 'uint256',
+      },
+    ],
+    name: 'IntervalBPChange',
+    type: 'event',
+  },
+  {
+    anonymous: false,
+    inputs: [
+      {
         indexed: true,
         internalType: 'address',
         name: 'previousOwner',
@@ -58,73 +90,197 @@ const abi: ABIFragment[] = [
     type: 'event',
   },
   {
-    inputs: [],
+    inputs: [
+
+    ],
     name: 'BASIS_POINTS',
-    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
-    stateMutability: 'view',
-    type: 'function',
-  },
-  {
-    inputs: [],
-    name: 'DISTRIBUTION_INTERVAL',
-    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
-    stateMutability: 'view',
-    type: 'function',
-  },
-  {
-    inputs: [],
-    name: 'STAKING_DEPLOY_TIME',
-    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
-    stateMutability: 'view',
-    type: 'function',
-  },
-  {
-    inputs: [],
-    name: 'STAKING_DISTRIBUTION_INTERVAL_MULTIPLIER',
-    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
     stateMutability: 'view',
     type: 'function',
   },
   {
     inputs: [
-      { internalType: 'contract IERC20[]', name: '_tokens', type: 'address[]' },
+
+    ],
+    name: 'DISTRIBUTION_INTERVAL',
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [
+
+    ],
+    name: 'STAKING_DEPLOY_TIME',
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [
+
+    ],
+    name: 'STAKING_DISTRIBUTION_INTERVAL_MULTIPLIER',
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [
+      {
+        internalType: 'contract IERC20[]',
+        name: '_tokens',
+        type: 'address[]',
+      },
     ],
     name: 'addTokens',
-    outputs: [],
+    outputs: [
+
+    ],
     stateMutability: 'nonpayable',
     type: 'function',
   },
   {
     inputs: [
-      { internalType: 'contract IERC20[]', name: '_tokens', type: 'address[]' },
-      { internalType: 'address', name: '_account', type: 'address' },
-      { internalType: 'uint256', name: '_startingInterval', type: 'uint256' },
-      { internalType: 'uint256', name: '_endingInterval', type: 'uint256' },
-      { internalType: 'uint256[]', name: '_hints', type: 'uint256[]' },
-      { internalType: 'bool', name: '_ignoreClaimed', type: 'bool' },
+      {
+        internalType: 'uint256',
+        name: 'vector',
+        type: 'uint256',
+      },
+    ],
+    name: 'addVector',
+    outputs: [
+
+    ],
+    stateMutability: 'nonpayable',
+    type: 'function',
+  },
+  {
+    inputs: [
+      {
+        internalType: 'contract IERC20[]',
+        name: '_tokens',
+        type: 'address[]',
+      },
+      {
+        internalType: 'address',
+        name: '_account',
+        type: 'address',
+      },
+      {
+        internalType: 'uint256',
+        name: '_startingInterval',
+        type: 'uint256',
+      },
+      {
+        internalType: 'uint256',
+        name: '_endingInterval',
+        type: 'uint256',
+      },
+      {
+        internalType: 'uint256[]',
+        name: '_hints',
+        type: 'uint256[]',
+      },
+      {
+        internalType: 'bool',
+        name: '_ignoreClaimed',
+        type: 'bool',
+      },
     ],
     name: 'calculateRewards',
-    outputs: [{ internalType: 'uint256[]', name: '', type: 'uint256[]' }],
+    outputs: [
+      {
+        internalType: 'uint256[]',
+        name: '',
+        type: 'uint256[]',
+      },
+    ],
     stateMutability: 'view',
     type: 'function',
   },
   {
     inputs: [
-      { internalType: 'contract IERC20[]', name: '_tokens', type: 'address[]' },
-      { internalType: 'address', name: '_account', type: 'address' },
-      { internalType: 'uint256', name: '_startingInterval', type: 'uint256' },
-      { internalType: 'uint256', name: '_endingInterval', type: 'uint256' },
-      { internalType: 'uint256[]', name: '_hints', type: 'uint256[]' },
+
     ],
-    name: 'claim',
-    outputs: [],
+    name: 'checkSafetyVectors',
+    outputs: [
+
+    ],
     stateMutability: 'nonpayable',
     type: 'function',
   },
   {
-    inputs: [],
+    inputs: [
+      {
+        internalType: 'contract IERC20[]',
+        name: '_tokens',
+        type: 'address[]',
+      },
+      {
+        internalType: 'address',
+        name: '_account',
+        type: 'address',
+      },
+      {
+        internalType: 'uint256',
+        name: '_startingInterval',
+        type: 'uint256',
+      },
+      {
+        internalType: 'uint256',
+        name: '_endingInterval',
+        type: 'uint256',
+      },
+      {
+        internalType: 'uint256[]',
+        name: '_hints',
+        type: 'uint256[]',
+      },
+    ],
+    name: 'claim',
+    outputs: [
+
+    ],
+    stateMutability: 'nonpayable',
+    type: 'function',
+  },
+  {
+    inputs: [
+
+    ],
     name: 'currentInterval',
-    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
     stateMutability: 'view',
     type: 'function',
   },
@@ -137,123 +293,291 @@ const abi: ABIFragment[] = [
       },
     ],
     name: 'distributionIntervalToStakingInterval',
-    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
     stateMutability: 'pure',
     type: 'function',
   },
   {
     inputs: [
-      { internalType: 'contract IERC20', name: '_token', type: 'address' },
+      {
+        internalType: 'contract IERC20',
+        name: '_token',
+        type: 'address',
+      },
     ],
     name: 'earmark',
-    outputs: [],
+    outputs: [
+
+    ],
     stateMutability: 'nonpayable',
     type: 'function',
   },
   {
     inputs: [
-      { internalType: 'contract IERC20', name: '', type: 'address' },
-      { internalType: 'uint256', name: '', type: 'uint256' },
+      {
+        internalType: 'contract IERC20',
+        name: '',
+        type: 'address',
+      },
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
     ],
     name: 'earmarked',
-    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
     stateMutability: 'view',
     type: 'function',
   },
   {
     inputs: [
-      { internalType: 'uint256', name: '_startingInterval', type: 'uint256' },
-      { internalType: 'uint256', name: '_endingInterval', type: 'uint256' },
-      { internalType: 'address', name: '_account', type: 'address' },
-      { internalType: 'uint256[]', name: '_hints', type: 'uint256[]' },
+      {
+        internalType: 'uint256',
+        name: '_startingInterval',
+        type: 'uint256',
+      },
+      {
+        internalType: 'uint256',
+        name: '_endingInterval',
+        type: 'uint256',
+      },
+      {
+        internalType: 'address',
+        name: '_account',
+        type: 'address',
+      },
+      {
+        internalType: 'uint256[]',
+        name: '_hints',
+        type: 'uint256[]',
+      },
     ],
     name: 'fetchAccountSnapshots',
-    outputs: [{ internalType: 'uint256[]', name: '', type: 'uint256[]' }],
+    outputs: [
+      {
+        internalType: 'uint256[]',
+        name: '',
+        type: 'uint256[]',
+      },
+    ],
     stateMutability: 'view',
     type: 'function',
   },
   {
     inputs: [
-      { internalType: 'uint256', name: '_startingInterval', type: 'uint256' },
-      { internalType: 'uint256', name: '_endingInterval', type: 'uint256' },
-      { internalType: 'uint256[]', name: '_hints', type: 'uint256[]' },
+      {
+        internalType: 'uint256',
+        name: '_startingInterval',
+        type: 'uint256',
+      },
+      {
+        internalType: 'uint256',
+        name: '_endingInterval',
+        type: 'uint256',
+      },
+      {
+        internalType: 'uint256[]',
+        name: '_hints',
+        type: 'uint256[]',
+      },
     ],
     name: 'fetchGlobalSnapshots',
-    outputs: [{ internalType: 'uint256[]', name: '', type: 'uint256[]' }],
+    outputs: [
+      {
+        internalType: 'uint256[]',
+        name: '',
+        type: 'uint256[]',
+      },
+    ],
     stateMutability: 'view',
     type: 'function',
   },
   {
     inputs: [
-      { internalType: 'address', name: '_account', type: 'address' },
-      { internalType: 'contract IERC20', name: '_token', type: 'address' },
-      { internalType: 'uint256', name: '_interval', type: 'uint256' },
+      {
+        internalType: 'address',
+        name: '_account',
+        type: 'address',
+      },
+      {
+        internalType: 'contract IERC20',
+        name: '_token',
+        type: 'address',
+      },
+      {
+        internalType: 'uint256',
+        name: '_interval',
+        type: 'uint256',
+      },
     ],
     name: 'getClaimed',
-    outputs: [{ internalType: 'bool', name: '', type: 'bool' }],
+    outputs: [
+      {
+        internalType: 'bool',
+        name: '',
+        type: 'bool',
+      },
+    ],
     stateMutability: 'view',
     type: 'function',
   },
   {
     inputs: [
-      { internalType: 'address', name: '_owner', type: 'address' },
-      { internalType: 'contract Staking', name: '_staking', type: 'address' },
-      { internalType: 'contract Treasury', name: '_treasury', type: 'address' },
-      { internalType: 'uint256', name: '_startingInterval', type: 'uint256' },
-      { internalType: 'contract IERC20[]', name: '_tokens', type: 'address[]' },
+      {
+        internalType: 'contract Staking',
+        name: '_staking',
+        type: 'address',
+      },
+      {
+        internalType: 'contract Treasury',
+        name: '_treasury',
+        type: 'address',
+      },
+      {
+        internalType: 'uint256',
+        name: '_startingInterval',
+        type: 'uint256',
+      },
+      {
+        internalType: 'contract IERC20[]',
+        name: '_tokens',
+        type: 'address[]',
+      },
     ],
     name: 'initializeGovernorRewards',
-    outputs: [],
+    outputs: [
+
+    ],
     stateMutability: 'nonpayable',
     type: 'function',
   },
   {
-    inputs: [{ internalType: 'uint256', name: '_time', type: 'uint256' }],
+    inputs: [
+      {
+        internalType: 'uint256',
+        name: '_time',
+        type: 'uint256',
+      },
+    ],
     name: 'intervalAtTime',
-    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
-    stateMutability: 'view',
-    type: 'function',
-  },
-  {
-    inputs: [],
-    name: 'intervalBP',
-    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
-    stateMutability: 'view',
-    type: 'function',
-  },
-  {
-    inputs: [{ internalType: 'contract IERC20', name: '', type: 'address' }],
-    name: 'nextEarmarkInterval',
-    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
-    stateMutability: 'view',
-    type: 'function',
-  },
-  {
-    inputs: [],
-    name: 'nextSnapshotPreCalcInterval',
-    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
-    stateMutability: 'view',
-    type: 'function',
-  },
-  {
-    inputs: [],
-    name: 'owner',
-    outputs: [{ internalType: 'address', name: '', type: 'address' }],
-    stateMutability: 'view',
-    type: 'function',
-  },
-  {
-    inputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
-    name: 'precalculatedGlobalSnapshots',
-    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
     stateMutability: 'view',
     type: 'function',
   },
   {
     inputs: [
-      { internalType: 'uint256', name: '_startingInterval', type: 'uint256' },
-      { internalType: 'uint256', name: '_endingInterval', type: 'uint256' },
-      { internalType: 'uint256[]', name: '_hints', type: 'uint256[]' },
+
+    ],
+    name: 'intervalBP',
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [
+      {
+        internalType: 'contract IERC20',
+        name: '',
+        type: 'address',
+      },
+    ],
+    name: 'nextEarmarkInterval',
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [
+
+    ],
+    name: 'nextSnapshotPreCalcInterval',
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [
+
+    ],
+    name: 'owner',
+    outputs: [
+      {
+        internalType: 'address',
+        name: '',
+        type: 'address',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
+    name: 'precalculatedGlobalSnapshots',
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [
+      {
+        internalType: 'uint256',
+        name: '_endingInterval',
+        type: 'uint256',
+      },
+      {
+        internalType: 'uint256[]',
+        name: '_hints',
+        type: 'uint256[]',
+      },
       {
         internalType: 'contract IERC20[]',
         name: '_postProcessTokens',
@@ -261,60 +585,148 @@ const abi: ABIFragment[] = [
       },
     ],
     name: 'prefetchGlobalSnapshots',
-    outputs: [],
+    outputs: [
+
+    ],
     stateMutability: 'nonpayable',
     type: 'function',
   },
   {
     inputs: [
-      { internalType: 'contract IERC20[]', name: '_tokens', type: 'address[]' },
+      {
+        internalType: 'contract IERC20[]',
+        name: '_tokens',
+        type: 'address[]',
+      },
     ],
     name: 'removeTokens',
-    outputs: [],
-    stateMutability: 'nonpayable',
-    type: 'function',
-  },
-  {
-    inputs: [],
-    name: 'renounceOwnership',
-    outputs: [],
+    outputs: [
+
+    ],
     stateMutability: 'nonpayable',
     type: 'function',
   },
   {
     inputs: [
-      { internalType: 'uint256', name: '_newIntervalBP', type: 'uint256' },
+      {
+        internalType: 'uint256',
+        name: 'vector',
+        type: 'uint256',
+      },
+    ],
+    name: 'removeVector',
+    outputs: [
+
+    ],
+    stateMutability: 'nonpayable',
+    type: 'function',
+  },
+  {
+    inputs: [
+
+    ],
+    name: 'renounceOwnership',
+    outputs: [
+
+    ],
+    stateMutability: 'nonpayable',
+    type: 'function',
+  },
+  {
+    inputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
+    name: 'safetyVector',
+    outputs: [
+      {
+        internalType: 'bool',
+        name: '',
+        type: 'bool',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [
+      {
+        internalType: 'uint256',
+        name: '_newIntervalBP',
+        type: 'uint256',
+      },
     ],
     name: 'setIntervalBP',
-    outputs: [],
+    outputs: [
+
+    ],
     stateMutability: 'nonpayable',
     type: 'function',
   },
   {
-    inputs: [],
+    inputs: [
+
+    ],
     name: 'staking',
-    outputs: [{ internalType: 'contract Staking', name: '', type: 'address' }],
+    outputs: [
+      {
+        internalType: 'contract Staking',
+        name: '',
+        type: 'address',
+      },
+    ],
     stateMutability: 'view',
     type: 'function',
   },
   {
-    inputs: [{ internalType: 'contract IERC20', name: '', type: 'address' }],
+    inputs: [
+      {
+        internalType: 'contract IERC20',
+        name: '',
+        type: 'address',
+      },
+    ],
     name: 'tokens',
-    outputs: [{ internalType: 'bool', name: '', type: 'bool' }],
+    outputs: [
+      {
+        internalType: 'bool',
+        name: '',
+        type: 'bool',
+      },
+    ],
     stateMutability: 'view',
     type: 'function',
   },
   {
-    inputs: [{ internalType: 'address', name: 'newOwner', type: 'address' }],
+    inputs: [
+      {
+        internalType: 'address',
+        name: 'newOwner',
+        type: 'address',
+      },
+    ],
     name: 'transferOwnership',
-    outputs: [],
+    outputs: [
+
+    ],
     stateMutability: 'nonpayable',
     type: 'function',
   },
   {
-    inputs: [],
+    inputs: [
+
+    ],
     name: 'treasury',
-    outputs: [{ internalType: 'contract Treasury', name: '', type: 'address' }],
+    outputs: [
+      {
+        internalType: 'contract Treasury',
+        name: '',
+        type: 'address',
+      },
+    ],
     stateMutability: 'view',
     type: 'function',
   },
