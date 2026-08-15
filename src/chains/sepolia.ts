@@ -2,7 +2,7 @@ import type { ChainConfig } from '../types';
 
 const chainConfig: ChainConfig = {
   delegator: {
-    address: '0x90e1a0079ffba71cbce449a5376c7900223ec62d',
+    address: '0x90E1A0079fFbA71cbce449a5376C7900223EC62d',
     deploymentBlock: 5784766,
   },
   getters: {
@@ -18,7 +18,7 @@ const chainConfig: ChainConfig = {
     deploymentBlock: -1,
   },
   implementation: {
-    address: '0x16dc2574cc30e4deecfb9ba22d95e5126a2fc0b3',
+    address: '0x16DC2574CC30E4deECfb9ba22d95E5126A2fC0B3',
     deploymentBlock: 5784775,
   },
   L1Sender: {
@@ -30,11 +30,11 @@ const chainConfig: ChainConfig = {
     deploymentBlock: -1,
   },
   proxy: {
-    address: '0xecfcf3b4ec647c4ca6d49108b311b7a7c9543fea',
+    address: '0xeCFCf3b4eC647c4Ca6D49108b311b7a7C9543fea',
     deploymentBlock: 5784774,
   },
   proxyAdmin: {
-    address: '0x3d1171ccb5ab40ba5ab887c1527a16ec39a8f1ae',
+    address: '0x3d1171cCb5aB40Ba5AB887c1527A16EC39a8F1aE',
     deploymentBlock: 5784770,
   },
   rail: {
@@ -46,7 +46,7 @@ const chainConfig: ChainConfig = {
     deploymentBlock: -1,
   },
   treasuryImplementation: {
-    address: '0x772b6bef48aa3fa94f46a5d521c84323d8e958a3',
+    address: '0x772b6bEf48AA3FA94F46a5d521C84323D8e958a3',
     deploymentBlock: 5784768,
   },
   treasuryProxy: {

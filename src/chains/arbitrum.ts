@@ -18,8 +18,8 @@ const chainConfig: ChainConfig = {
     deploymentBlock: -1,
   },
   implementation: {
-    address: '0x5Eb61FD880eF65200Ef0bEB0d964fa6020FD5877',
-    deploymentBlock: 56109861,
+    address: '0x4799527d8B767354FfC14E849cAE94A644A1F221',
+    deploymentBlock: 489078449,
   },
   L1Sender: {
     address: '0x20Fa11c4F794eC1db3527bF618B02754FF393bD5',

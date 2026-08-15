@@ -18,8 +18,8 @@ const chainConfig: ChainConfig = {
     deploymentBlock: 35938117,
   },
   implementation: {
-    address: '0xa375b97b5701bb85b963192072f1699b49c0e9f7',
-    deploymentBlock: 35570637,
+    address: '0x4799527d8B767354FfC14E849cAE94A644A1F221',
+    deploymentBlock: 91107604,
   },
   L1Sender: {
     address: '',
@@ -30,7 +30,7 @@ const chainConfig: ChainConfig = {
     deploymentBlock: -1,
   },
   proxy: {
-    address: '0x19b620929f97b7b990801496c3b361ca5def8c71',
+    address: '0x19B620929f97b7b990801496c3b361CA5dEf8C71',
     deploymentBlock: 27803253,
   },
   proxyAdmin: {
